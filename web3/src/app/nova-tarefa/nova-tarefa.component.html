@@ -1,0 +1,8 @@
+<h2>nova tarefa</h2>
+
+<form [formGroup]='newtarefaform' (ngSubmit)='salvarTarefa()' >
+
+<input formControlName="tarefa" type="text"placeholder="tarefa" [(value)]="tarefa">
+<button >salvar tarefa</button>
+
+</form>

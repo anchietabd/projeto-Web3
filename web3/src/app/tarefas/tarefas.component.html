@@ -1,0 +1,9 @@
+<h2>tarefas</h2>
+<button (click)='NovaTarefa()'>nova tarefa</button>
+<ul>
+    <li *ngFor="let tarefa of tarefaslista | async" >
+  <button (click)="editarTarefa(tarefa.id)"> {{ tarefa.tarefa }}</button>      
+<button (click)='deletar(tarefa.id)'>deletar</button>
+    </li>
+</ul>
+<button (click)='sair()'>sair</button>

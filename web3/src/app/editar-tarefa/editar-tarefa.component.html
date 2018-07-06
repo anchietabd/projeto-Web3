@@ -1,0 +1,9 @@
+<h2>editar tarefa</h2>
+
+<form [formGroup]='tarefaForm' (ngSubmit)='salvar()' >
+
+<input formControlName="tarefa" type="text"placeholder="tarefa">
+<button>salvar tarefa</button>
+
+</form>
+{{tarefa|json}}

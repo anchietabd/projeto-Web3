@@ -1,0 +1,8 @@
+<h2>Cria Conta</h2>
+<form [formGroup]="CriarContaForm"(ngSubmit)="CriarConta()">
+
+  <input formControlName="email" type="email"placeholder="email"><br>
+  <input formControlName="senha" type="password"placeholder="senha"><br>
+  <button>nova conta</button>
+</form>
+<a routerLink="/">login</a>
